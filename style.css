@@ -208,27 +208,14 @@ html, body {
   opacity: 0.5;
 }
 
-.credit-author {
+.credit-highlight {
   font-weight: 600;
   color: #ffffff;
-  position: relative;
-  padding-bottom: 2px;
+  transition: text-shadow 0.3s ease;
 }
 
-.credit-author::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 1px;
-  background: linear-gradient(90deg, var(--accent-cyan), var(--accent-violet));
-  transform: scaleX(0.7);
-  transition: transform 0.3s ease;
-}
-
-.credit:hover .credit-author::after {
-  transform: scaleX(1);
+.credit:hover .credit-highlight {
+  text-shadow: 0 0 12px rgba(56, 189, 248, 0.5);
 }
 
 /* Animations */
